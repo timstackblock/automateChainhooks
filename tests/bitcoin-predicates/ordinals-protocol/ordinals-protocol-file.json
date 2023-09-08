@@ -1,0 +1,21 @@
+{
+    "uuid": "5128f99a-eac7-484f-8228-6e643bd19124",
+    "name": "Hello Ordinals",
+    "chain": "bitcoin",
+    "version": 1,
+    "networks": {
+        "mainnet": {
+            "start_block": 777534,
+            "end_block": 777540,
+            "if_this": {
+                "scope": "ordinals_protocol",
+                "operation": "inscription_feed"
+            },
+            "then_that": {
+                "file_append": {
+                    "path": "tests/bitcoin-predicates/ordinals-protocol/ordinals-protocol-file-result.json"
+                }
+            }
+        }
+    }
+}

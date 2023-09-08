@@ -1,0 +1,23 @@
+{
+  "chain": "stacks",
+  "uuid": "c3c3bf08-2035-40bf-a5eb-0e4295911f8a",
+  "name": "nft event file",
+  "version": 1,
+  "networks": {
+    "testnet": {
+      "start_block": 38355,
+      "end_block": 38358,
+      "expire_after_occurrence": 1,
+      "if_this": {
+        "scope": "nft_event",
+        "asset_identifier": "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.redeeem-nft-v0::redeeem-nft-v0",
+        "actions": ["mint"]
+      },
+      "then_that": {
+        "file_append": {
+          "path": "tests/stacks-predicates/nft-event/nft-event-file-result.json"
+        }
+      }
+    }
+  }
+}

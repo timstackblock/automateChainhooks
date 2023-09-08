@@ -1,0 +1,22 @@
+{
+    "uuid": "1",
+    "name": "Hello Ordinals",
+    "chain": "bitcoin",
+    "version": 1,
+    "networks": {
+        "testnet": {
+            "start_block": 802100,
+            "end_block": 802108,
+            "if_this": {
+                "scope": "txid",
+                "equals": "9413aee600c9da3442768245115e68671fa0d1ba6e40780433576743f3747173"
+            },
+            "then_that": {
+                "http_post": {
+                    "url": "https://webhook.site/1d34131a-26c4-4f9d-8b91-c68972bd79ad",
+                    "authorization_header": ""
+                }
+            }
+        }
+    }
+}
